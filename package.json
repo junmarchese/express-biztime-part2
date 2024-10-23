@@ -1,0 +1,25 @@
+{
+  "name": "express-biztime-part2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "create-test-db": "createdb biztime_test || true",
+    "setup-test-db": "NODE_ENV=test node setup_test_db.js",
+    "test": "npm run create-test-db && npm run setup-test-db && jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "pg": "^8.13.0",
+    "slugify": "^1.6.6"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.7",
+    "supertest": "^7.0.0"
+  }
+}
